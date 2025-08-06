@@ -15,6 +15,8 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=amalshajimichaelk&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
+ ![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
+
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
@@ -22,9 +24,7 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 ![](https://github-contributor-stats.vercel.app/api?username=amalshajimichaelk&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
-<div align="center">
-  ![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
-</div>
+ 
 
 [![](https://visitcount.itsvg.in/api?id=amalshajimichaelk&icon=0&color=0)](https://visitcount.itsvg.in)
 
