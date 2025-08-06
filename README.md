@@ -22,7 +22,7 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 ![](https://github-contributor-stats.vercel.app/api?username=amalshajimichaelk&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
-<div align="center>
+<div align="center">
   ![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
 </div>
 
