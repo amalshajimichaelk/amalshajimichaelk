@@ -1,5 +1,5 @@
-# 💫 About Me:
-I am an aspiring software engineer<br>I have learned html, css, javascript, python, C, and java<br>I am passionate about becoming a full stack web developer 
+# 💫 About Me :
+Passionate programming enthusiast and video editor | Loves to explore new technologies and creative projects | Let's connect and grow together in the tech and creative fields!
 
 
 ## 🌐 Socials:
