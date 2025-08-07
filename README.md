@@ -1,7 +1,6 @@
 # 💫 About Me :
 Passionate programming enthusiast and video editor | Loves to explore new technologies and creative projects | Let's connect and grow together in the tech and creative fields!
 img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="500">
-<img
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/amalshajimichael?igsh=NGJqMmJmaTJodnpw&utm_source=qr) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amal-shaji-michael-306812315) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@__shah.ji_cinephile?si=cXwM7IwjaAiTC-ke) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:amalshajimichael@gmail.com) 
