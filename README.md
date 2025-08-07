@@ -1,3 +1,4 @@
+<div align="center" style="padding: 20px; background-color: #f5f5f5; border-radius: 15px; box-shadow: 2px 2px 15px rgba(0,0,0,0.2);">
 <img src="https://private-user-images.githubusercontent.com/74038190/240304586-d48893bd-0757-481c-8d7e-ba3e163feae7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQ1NzU3MzksIm5iZiI6MTc1NDU3NTQzOSwicGF0aCI6Ii83NDAzODE5MC8yNDAzMDQ1ODYtZDQ4ODkzYmQtMDc1Ny00ODFjLThkN2UtYmEzZTE2M2ZlYWU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODA3VDE0MDM1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ1NmY1MjhjZjBkNTEzOGRjNGMyNDFhZmNmZjRjMTBkZGExMjY1YzY2ZWQzYjA5YjA3ZmNjMjlmMTQ4YWYxNmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.86yZ4YXKLU29S7lrdQQGeAP11AqbPqt_TZ-R2uiJevg" width="1500"/>
 
 # 💫 About Me :
@@ -37,7 +38,7 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 
 [![](https://visitcount.itsvg.in/api?id=amalshajimichaelk&icon=0&color=0)](https://visitcount.itsvg.in)
 
-
+</div>
 
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
