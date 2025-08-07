@@ -1,5 +1,6 @@
 # 💫 About Me :
 Passionate programming enthusiast and video editor | Loves to explore new technologies and creative projects | Let's connect and grow together in the tech and creative fields!
+
 <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="500">
 
 ## 🌐 Socials:
