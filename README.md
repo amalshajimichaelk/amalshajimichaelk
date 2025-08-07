@@ -17,6 +17,8 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 ![](https://nirzak-streak-stats.vercel.app/?user=amalshajimichaelk&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=amalshajimichaelk&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
+<img src="https://user-images.githubusercontent.com/74038190/216644497-1951db19-8f3d-4e44-ac08-8e9d7e0d94a7.gif" width="1500">
+
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=amalshajimichaelk&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
