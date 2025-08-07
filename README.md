@@ -1,7 +1,8 @@
+<img src="https://private-user-images.githubusercontent.com/74038190/240304586-d48893bd-0757-481c-8d7e-ba3e163feae7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQ1NzU3MzksIm5iZiI6MTc1NDU3NTQzOSwicGF0aCI6Ii83NDAzODE5MC8yNDAzMDQ1ODYtZDQ4ODkzYmQtMDc1Ny00ODFjLThkN2UtYmEzZTE2M2ZlYWU3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA4MDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwODA3VDE0MDM1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ1NmY1MjhjZjBkNTEzOGRjNGMyNDFhZmNmZjRjMTBkZGExMjY1YzY2ZWQzYjA5YjA3ZmNjMjlmMTQ4YWYxNmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.86yZ4YXKLU29S7lrdQQGeAP11AqbPqt_TZ-R2uiJevg" width="1500"/>
+
 # 💫 About Me :
 Passionate programming enthusiast and video editor | Loves to explore new technologies and creative projects | Let's connect and grow together in the tech and creative fields!
-
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="500">
+<img src="https://64.media.tumblr.com/005e37a86478a9c92da7d4d3d7464b40/2bd29f0062317531-b1/s400x600/c7edc142895bc810339223dfddf2aa57ced0c32b.gif" width="1500"/>
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/amalshajimichael?igsh=NGJqMmJmaTJodnpw&utm_source=qr) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amal-shaji-michael-306812315) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@__shah.ji_cinephile?si=cXwM7IwjaAiTC-ke) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:amalshajimichael@gmail.com) 
@@ -15,6 +16,8 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=amalshajimichaelk&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+
 
  ![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
 
@@ -30,7 +33,6 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 [![](https://visitcount.itsvg.in/api?id=amalshajimichaelk&icon=0&color=0)](https://visitcount.itsvg.in)
 
 
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="500">
 
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
