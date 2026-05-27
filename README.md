@@ -24,9 +24,10 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy-git-master-randy408.vercel.app/?username=amalshajimichaelk&theme=onedark&no-frame=true&margin-w=10&row=1)
 
- ![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
+[![trophy](https://github-profile-trophy-fork-two.vercel.app/?username=amalshajimichaelk&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
