@@ -33,6 +33,17 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 
 ### 🔝 Top Contributed Repo
 <!-- TOP_REPOS_START -->
+<div align="center">
+
+| Rank | Repository | Commits | Language |
+|:----:|-----------|:-------:|:--------:|
+| 🥇 | [amalshajimichaelk](https://github.com/amalshajimichaelk/amalshajimichaelk) | 46 | 🐍 Python |
+| 🥈 | [S1_Python-1-](https://github.com/amalshajimichaelk/S1_Python-1-) | 34 | 🐍 Python |
+| 🥉 | [Data_Structure_Lab](https://github.com/amalshajimichaelk/Data_Structure_Lab) | 25 | 🔵 C |
+| 4️⃣ | [OS_Lab](https://github.com/amalshajimichaelk/OS_Lab) | 25 | 🔵 C |
+| 5️⃣ | [Bookstore-Management-System](https://github.com/amalshajimichaelk/Bookstore-Management-System) | 21 | ☕ Java |
+
+</div>
 <!-- TOP_REPOS_END -->
 ---
  
