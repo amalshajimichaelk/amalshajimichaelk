@@ -32,8 +32,8 @@ Passionate programming enthusiast and video editor | Loves to explore new techno
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=amalshajimichaelk&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
+<!-- TOP_REPOS_START -->
+<!-- TOP_REPOS_END -->
 ---
  
 
