@@ -39,7 +39,7 @@ Portfolio : https://amalshajimichael.vercel.app
 
 | Rank | Repository | Commits | Language |
 |:----:|-----------|:-------:|:--------:|
-| 🥇 | [amalshajimichaelk](https://github.com/amalshajimichaelk/amalshajimichaelk) | 46 | 🐍 Python |
+| 🥇 | [amalshajimichaelk](https://github.com/amalshajimichaelk/amalshajimichaelk) | 47 | 🐍 Python |
 | 🥈 | [S1_Python-1-](https://github.com/amalshajimichaelk/S1_Python-1-) | 34 | 🐍 Python |
 | 🥉 | [Data_Structure_Lab](https://github.com/amalshajimichaelk/Data_Structure_Lab) | 25 | 🔵 C |
 | 4️⃣ | [OS_Lab](https://github.com/amalshajimichaelk/OS_Lab) | 25 | 🔵 C |
