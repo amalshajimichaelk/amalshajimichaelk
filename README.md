@@ -26,27 +26,31 @@ Portfolio : https://amalshajimichael.vercel.app
 
 ## 🏆 GitHub Trophies
 
-[![trophy](https://github-profile-trophy-fork-two.vercel.app/?username=amalshajimichaelk&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=amalshajimichaelk&theme=onedark&no-frame=true&no-bg=true&column=4)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
 
 ![snake gif](https://github.com/amalshajimichaelk/amalshajimichaelk/blob/output/github-snake-dark.svg)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-### 🔝 Top Contributed Repo
-<!-- TOP_REPOS_START -->
+### 🚀 Latest Contributed Repo
+<!-- LATEST_REPO_START -->
 <div align="center">
 
-| Rank | Repository | Commits | Language |
-|:----:|-----------|:-------:|:--------:|
-| 🥇 | [amalshajimichaelk](https://github.com/amalshajimichaelk/amalshajimichaelk) | 47 | 🐍 Python |
-| 🥈 | [S1_Python-1-](https://github.com/amalshajimichaelk/S1_Python-1-) | 34 | 🐍 Python |
-| 🥉 | [Data_Structure_Lab](https://github.com/amalshajimichaelk/Data_Structure_Lab) | 25 | 🔵 C |
-| 4️⃣ | [OS_Lab](https://github.com/amalshajimichaelk/OS_Lab) | 25 | 🔵 C |
-| 5️⃣ | [Bookstore-Management-System](https://github.com/amalshajimichaelk/Bookstore-Management-System) | 21 | ☕ Java |
+| Rank | Repository | Last Contribution | Language |
+|:---:|:---|:---:|:---:|
+| 🥇 | [amalshajimichaelk](https://github.com/amalshajimichaelk/amalshajimichaelk) | Nov 04, 2026 | 🐍 Python |
+| 🥈 | [S1_Python-1-](https://github.com/amalshajimichaelk/S1_Python-1-) | Nov 03, 2026 | 🐍 Python |
+| 🥉 | [Data_Structure_Lab](https://github.com/amalshajimichaelk/Data_Structure_Lab) | Nov 01, 2026 | 🔵 C |
+| 4️⃣ | [OS_Lab](https://github.com/amalshajimichaelk/OS_Lab) | Oct 30, 2026 | 🔵 C |
+| 5️⃣ | [Bookstore-Management-System](https://github.com/amalshajimichaelk/Bookstore-Management-System) | Oct 28, 2026 | ☕ Java |
 
 </div>
-<!-- TOP_REPOS_END -->
+<!-- LATEST_REPO_END -->
 ---
  
 

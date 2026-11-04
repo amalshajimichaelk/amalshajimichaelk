@@ -1,0 +1,169 @@
+name: Latest Contributed Repo Updater
+
+on:
+  # Event-driven: Triggered by webhook receiver
+  workflow_dispatch:
+    inputs:
+      source_repository:
+        description: 'Repository that triggered the update (format: owner/repo)'
+        required: false
+        type: string
+      delivery_id:
+        description: 'GitHub webhook delivery ID for deduplication'
+        required: false
+        type: string
+      event_type:
+        description: 'Event type that triggered this workflow'
+        required: false
+        type: string
+        default: 'push'
+      mode:
+        description: 'Update mode: update, reconcile, or bootstrap'
+        required: false
+        type: string
+        default: 'update'
+
+  # Scheduled reconciliation as fallback
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+
+  # Manual execution
+  # Can also be triggered manually from Actions tab
+
+permissions:
+  contents: write
+  actions: write
+
+# Prevent concurrent executions from corrupting data
+concurrency:
+  group: contribution-updater
+  cancel-in-progress: false
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Determine update mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.source_repository }}" ]; then
+            echo "mode=${{ inputs.mode || 'update' }}" >> $GITHUB_OUTPUT
+            echo "repository=${{ inputs.source_repository }}" >> $GITHUB_OUTPUT
+            echo "trigger=event-driven (webhook)" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "mode=reconcile" >> $GITHUB_OUTPUT
+            echo "repository=" >> $GITHUB_OUTPUT
+            echo "trigger=scheduled" >> $GITHUB_OUTPUT
+          else
+            echo "mode=reconcile" >> $GITHUB_OUTPUT
+            echo "repository=" >> $GITHUB_OUTPUT
+            echo "trigger=manual" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check if initial bootstrap needed
+        id: check_bootstrap
+        run: |
+          if [ ! -f "data/latest-contributions.json" ] || [ ! -s "data/latest-contributions.json" ]; then
+            echo "needs_bootstrap=true" >> $GITHUB_OUTPUT
+            echo "⚠️ Contribution data missing, will run bootstrap"
+          else
+            # Check if data file has any repositories
+            repo_count=$(python3 -c "import json; data=json.load(open('data/latest-contributions.json')); print(len(data.get('repositories', {})))")
+            if [ "$repo_count" -eq 0 ]; then
+              echo "needs_bootstrap=true" >> $GITHUB_OUTPUT
+              echo "⚠️ No repositories in data, will run bootstrap"
+            else
+              echo "needs_bootstrap=false" >> $GITHUB_OUTPUT
+              echo "✅ Found $repo_count repositories in data"
+            fi
+          fi
+
+      - name: Run updater script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_REPOS: 0  # 0 = unlimited, or set to limit displayed repos
+        run: |
+          echo "🚀 Starting contribution update"
+          echo "Trigger: ${{ steps.mode.outputs.trigger }}"
+          echo "Mode: ${{ steps.mode.outputs.mode }}"
+
+          if [ "${{ steps.check_bootstrap.outputs.needs_bootstrap }}" = "true" ]; then
+            echo "📦 Running initial bootstrap..."
+            python3 scripts/update_latest_repo.py --mode bootstrap
+          elif [ -n "${{ steps.mode.outputs.repository }}" ]; then
+            echo "🔄 Updating repository: ${{ steps.mode.outputs.repository }}"
+            python3 scripts/update_latest_repo.py --mode update --repository "${{ steps.mode.outputs.repository }}"
+          elif [ "${{ steps.mode.outputs.mode }}" = "reconcile" ]; then
+            echo "🔄 Running full reconciliation..."
+            python3 scripts/update_latest_repo.py --mode reconcile
+          else
+            echo "🔄 Running reconciliation (default)..."
+            python3 scripts/update_latest_repo.py --mode reconcile
+          fi
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet HEAD -- README.md data/latest-contributions.json || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+          if git diff --quiet HEAD -- README.md data/latest-contributions.json; then
+            echo "ℹ️ No changes to commit"
+          else
+            echo "✅ Changes detected"
+            git diff --stat HEAD -- README.md data/latest-contributions.json
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add README.md data/latest-contributions.json
+
+          # Create commit message based on trigger
+          if [ "${{ steps.mode.outputs.trigger }}" = "event-driven (webhook)" ]; then
+            commit_msg="chore: update latest contributed repo - ${{ steps.mode.outputs.repository }} [skip ci]"
+          else
+            commit_msg="chore: update latest contributed repo (${{ steps.mode.outputs.trigger }}) [skip ci]"
+          fi
+
+          git commit -m "$commit_msg"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 📊 Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ steps.mode.outputs.trigger }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode**: ${{ steps.mode.outputs.mode }}" >> $GITHUB_STEP_SUMMARY
+
+          if [ -n "${{ steps.mode.outputs.repository }}" ]; then
+            echo "- **Repository**: ${{ steps.mode.outputs.repository }}" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          if [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then
+            echo "- **Status**: ✅ Changes committed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status**: ℹ️ No changes needed" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Show tracked repository count
+          if [ -f "data/latest-contributions.json" ]; then
+            repo_count=$(python3 -c "import json; data=json.load(open('data/latest-contributions.json')); print(len(data.get('repositories', {})))" 2>/dev/null || echo "0")
+            echo "- **Tracked Repositories**: $repo_count" >> $GITHUB_STEP_SUMMARY
+          fi

@@ -1,0 +1,12 @@
+name = "github-profile-webhook"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+PROFILE_REPO_OWNER = "amalshajimichaelk"
+PROFILE_REPO_NAME = "amalshajimichaelk"
+
+# These should be set as secrets using: wrangler secret put <SECRET_NAME>
+# GITHUB_WEBHOOK_SECRET
+# GITHUB_APP_ID
+# GITHUB_APP_PRIVATE_KEY
