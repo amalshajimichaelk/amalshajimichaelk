@@ -77,8 +77,13 @@ class GitHubClient:
 
         raise GitHubAPIError(f"Max retries ({max_retries}) exceeded")
 
-    def get_user_repos(self, username: str) -> List[Dict]:
-        """Fetch all repositories for a user (owned, not forks by default)."""
+    def get_user_repos(self, username: str, include_forks: bool = True) -> List[Dict]:
+        """Fetch all repositories for a user.
+
+        Args:
+            username: GitHub username
+            include_forks: Whether to include forked repositories (default: True)
+        """
         repos = []
         page = 1
 
@@ -96,8 +101,11 @@ class GitHubClient:
 
             page += 1
 
-        # Filter out forks and private repos
-        return [r for r in repos if not r.get("fork", False) and not r.get("private", False)]
+        # Filter out private repos, and optionally forks
+        return [
+            r for r in repos
+            if not r.get("private", False) and (include_forks or not r.get("fork", False))
+        ]
 
     def get_repo_info(self, owner: str, repo: str) -> Optional[Dict]:
         """Fetch repository metadata."""

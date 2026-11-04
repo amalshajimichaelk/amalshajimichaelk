@@ -67,37 +67,46 @@ class ContributionTracker:
                 os.remove(temp_file)
             raise
 
-    def update_repository(self, repo_info: Dict, latest_commit: Dict):
+    def update_repository(self, repo_info: Dict, latest_commit: Optional[Dict] = None):
         """Update or add repository with its latest personal contribution.
 
         Args:
             repo_info: Repository metadata from GitHub API
-            latest_commit: Latest commit by the user from GitHub API
+            latest_commit: Latest commit by the user from GitHub API (or None if repo was created by user)
         """
         full_name = repo_info["full_name"]
-        commit_data = latest_commit.get("commit", {})
-
-        # Extract timestamps
-        # Use committer timestamp for chronological ordering (when it was committed)
-        # Keep author timestamp for reference
-        committer_timestamp = commit_data.get("committer", {}).get("date")
-        author_timestamp = commit_data.get("author", {}).get("date")
-
-        if not committer_timestamp:
-            print(f"⚠️  No committer timestamp for {full_name}, skipping")
-            return
 
         # Verify repository is public
         if repo_info.get("private", False):
             print(f"⚠️  Repository {full_name} is private, skipping")
             return
 
+        if latest_commit:
+            commit_data = latest_commit.get("commit", {})
+            committer_timestamp = commit_data.get("committer", {}).get("date")
+            author_timestamp = commit_data.get("author", {}).get("date")
+            commit_sha = latest_commit.get("sha")
+            commit_url = latest_commit.get("html_url")
+        elif repo_info.get("owner", {}).get("login") == self.username and not repo_info.get("fork", False):
+            # User created the repository - repo creation is a personal contribution
+            committer_timestamp = repo_info.get("created_at")
+            author_timestamp = repo_info.get("created_at")
+            commit_sha = None
+            commit_url = repo_info.get("html_url")
+        else:
+            print(f"⚠️  No personal contributions for {full_name}, skipping")
+            return
+
+        if not committer_timestamp:
+            print(f"⚠️  No committer timestamp for {full_name}, skipping")
+            return
+
         self.data["repositories"][full_name] = {
             "name": repo_info["name"],
             "full_name": full_name,
             "html_url": repo_info["html_url"],
-            "latest_commit_sha": latest_commit["sha"],
-            "latest_commit_url": latest_commit["html_url"],
+            "latest_commit_sha": commit_sha,
+            "latest_commit_url": commit_url,
             "latest_personal_commit_timestamp": committer_timestamp,
             "author_timestamp": author_timestamp,
             "language": repo_info.get("language"),
@@ -159,7 +168,7 @@ class ContributionTracker:
                 owner, repo_name, self.username
             )
 
-            if latest_commit:
+            if latest_commit or (owner == self.username and not repo.get("fork", False)):
                 self.update_repository(repo, latest_commit)
             else:
                 print(f"   No commits by {self.username}")
@@ -188,7 +197,7 @@ class ContributionTracker:
                 owner, repo_name, self.username
             )
 
-            if latest_commit:
+            if latest_commit or (owner == self.username and not repo.get("fork", False)):
                 self.update_repository(repo, latest_commit)
 
         # Remove repositories that no longer exist or are now private
@@ -227,9 +236,9 @@ class ContributionTracker:
             owner, repo_name, self.username
         )
 
-        if latest_commit:
+        if latest_commit or (owner == self.username and not repo_info.get("fork", False)):
             self.update_repository(repo_info, latest_commit)
             return True
         else:
-            print(f"⚠️  No commits by {self.username} in {full_name}")
+            print(f"⚠️  No contributions by {self.username} in {full_name}")
             return False

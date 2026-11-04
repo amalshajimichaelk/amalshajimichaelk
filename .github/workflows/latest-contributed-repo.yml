@@ -27,6 +27,14 @@ on:
   schedule:
     - cron: '*/15 * * * *'  # Every 15 minutes
 
+  # Trigger on pushes to main (excluding data and README updates)
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+      - 'data/**'
+
   # Manual execution
   # Can also be triggered manually from Actions tab
 
@@ -67,6 +75,10 @@ jobs:
             echo "mode=reconcile" >> $GITHUB_OUTPUT
             echo "repository=" >> $GITHUB_OUTPUT
             echo "trigger=scheduled" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            echo "mode=reconcile" >> $GITHUB_OUTPUT
+            echo "repository=" >> $GITHUB_OUTPUT
+            echo "trigger=push" >> $GITHUB_OUTPUT
           else
             echo "mode=reconcile" >> $GITHUB_OUTPUT
             echo "repository=" >> $GITHUB_OUTPUT
@@ -94,7 +106,7 @@ jobs:
       - name: Run updater script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_REPOS: 0  # 0 = unlimited, or set to limit displayed repos
+          MAX_REPOS: 5  # 5 = top 5 repos (0 = unlimited)
         run: |
           echo "🚀 Starting contribution update"
           echo "Trigger: ${{ steps.mode.outputs.trigger }}"

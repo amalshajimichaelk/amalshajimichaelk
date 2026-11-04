@@ -23,7 +23,7 @@ from lib.readme_generator import generate_markdown_table, update_readme, migrate
 USERNAME = "amalshajimichaelk"
 DATA_FILE = "data/latest-contributions.json"
 README_PATH = "README.md"
-MAX_REPOS = int(os.environ.get("MAX_REPOS", "0"))  # 0 = unlimited
+MAX_REPOS = int(os.environ.get("MAX_REPOS", "5"))  # Default 5 repos (0 = unlimited)
 
 
 def main():

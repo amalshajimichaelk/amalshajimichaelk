@@ -24,6 +24,7 @@ LANG_EMOJI = {
     "Kotlin": "🟣",
     "Dart": "🎯",
     "Markdown": "📝",
+    "Jupyter Notebook": "🪐",
 }
 
 # Rank emojis

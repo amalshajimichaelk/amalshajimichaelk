@@ -44,10 +44,10 @@ Portfolio : https://amalshajimichael.vercel.app
 | Rank | Repository | Last Contribution | Language |
 |:---:|:---|:---:|:---:|
 | 🥇 | [amalshajimichaelk](https://github.com/amalshajimichaelk/amalshajimichaelk) | Nov 04, 2026 | 🐍 Python |
-| 🥈 | [S1_Python-1-](https://github.com/amalshajimichaelk/S1_Python-1-) | Nov 03, 2026 | 🐍 Python |
-| 🥉 | [Data_Structure_Lab](https://github.com/amalshajimichaelk/Data_Structure_Lab) | Nov 01, 2026 | 🔵 C |
-| 4️⃣ | [OS_Lab](https://github.com/amalshajimichaelk/OS_Lab) | Oct 30, 2026 | 🔵 C |
-| 5️⃣ | [Bookstore-Management-System](https://github.com/amalshajimichaelk/Bookstore-Management-System) | Oct 28, 2026 | ☕ Java |
+| 🥈 | [Portfolio](https://github.com/amalshajimichaelk/Portfolio) | Nov 03, 2026 | 🔷 TypeScript |
+| 🥉 | [Subscription_Management_System_OODO](https://github.com/amalshajimichaelk/Subscription_Management_System_OODO) | Nov 03, 2026 | 🔷 TypeScript |
+| 4️⃣ | [Quantum_Shield](https://github.com/amalshajimichaelk/Quantum_Shield) | Nov 03, 2026 | 🐍 Python |
+| 5️⃣ | [Quantum_Hack](https://github.com/amalshajimichaelk/Quantum_Hack) | Nov 01, 2026 | 🐍 Python |
 
 </div>
 <!-- LATEST_REPO_END -->
