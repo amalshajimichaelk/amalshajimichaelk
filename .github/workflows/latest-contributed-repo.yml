@@ -153,8 +153,43 @@ jobs:
           fi
 
           git commit -m "$commit_msg"
-          git pull --rebase origin main
-          git push
+
+          # Robust push with retry and rebase to prevent rejection
+          pushed=false
+          for attempt in 1 2 3; do
+            echo "Push attempt $attempt..."
+            git fetch origin main
+            if git rebase origin/main; then
+              if git push origin main; then
+                pushed=true
+                echo "✅ Successfully pushed changes"
+                break
+              fi
+            else
+              echo "⚠️ Conflict during rebase, regenerating on top of remote..."
+              git rebase --abort || true
+              git reset --hard origin/main
+              python3 scripts/update_latest_repo.py --mode reconcile
+              git add README.md data/latest-contributions.json
+              if git diff --cached --quiet; then
+                pushed=true
+                echo "ℹ️ No changes needed after syncing with remote"
+                break
+              fi
+              git commit -m "$commit_msg"
+              if git push origin main; then
+                pushed=true
+                echo "✅ Successfully pushed changes"
+                break
+              fi
+            fi
+            sleep 2
+          done
+
+          if [ "$pushed" != "true" ]; then
+            echo "❌ Failed to push changes after multiple attempts"
+            exit 1
+          fi
 
       - name: Summary
         if: always()
