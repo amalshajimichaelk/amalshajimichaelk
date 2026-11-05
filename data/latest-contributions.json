@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "username": "amalshajimichaelk",
-  "last_successful_reconciliation": "2026-11-05T01:30:19.685290+00:00",
+  "last_successful_reconciliation": "2026-11-05T08:27:41.110026+00:00",
   "repositories": {
     "amalshajimichaelk/amalshajimichaelk": {
       "name": "amalshajimichaelk",
@@ -13,7 +13,7 @@
       "author_timestamp": "2026-11-04T15:00:39Z",
       "language": "Python",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:08.251218+00:00"
+      "last_verified_at": "2026-11-05T08:27:30.104150+00:00"
     },
     "amalshajimichaelk/Bookstore-Management-System": {
       "name": "Bookstore-Management-System",
@@ -25,7 +25,7 @@
       "author_timestamp": "2025-11-01T05:55:33Z",
       "language": "Java",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:08.662439+00:00"
+      "last_verified_at": "2026-11-05T08:27:30.520117+00:00"
     },
     "amalshajimichaelk/Data_Structure_Lab": {
       "name": "Data_Structure_Lab",
@@ -37,7 +37,7 @@
       "author_timestamp": "2025-12-01T14:23:37Z",
       "language": "C",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:09.751707+00:00"
+      "last_verified_at": "2026-11-05T08:27:31.656237+00:00"
     },
     "amalshajimichaelk/DBMS": {
       "name": "DBMS",
@@ -49,7 +49,7 @@
       "author_timestamp": "2026-04-06T06:41:58Z",
       "language": null,
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:10.181685+00:00"
+      "last_verified_at": "2026-11-05T08:27:32.117128+00:00"
     },
     "amalshajimichaelk/HTML_S2": {
       "name": "HTML_S2",
@@ -61,7 +61,7 @@
       "author_timestamp": "2025-04-30T02:16:52Z",
       "language": "HTML",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:11.337847+00:00"
+      "last_verified_at": "2026-11-05T08:27:33.242673+00:00"
     },
     "amalshajimichaelk/Java-Project": {
       "name": "Java-Project",
@@ -73,7 +73,7 @@
       "author_timestamp": "2025-10-22T05:27:51Z",
       "language": "Java",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:11.709428+00:00"
+      "last_verified_at": "2026-11-05T08:27:33.689830+00:00"
     },
     "amalshajimichaelk/Lumira": {
       "name": "Lumira",
@@ -85,7 +85,7 @@
       "author_timestamp": "2026-06-11T15:54:26Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:12.623512+00:00"
+      "last_verified_at": "2026-11-05T08:27:34.472617+00:00"
     },
     "amalshajimichaelk/Nexus_AI_billing_portal": {
       "name": "Nexus_AI_billing_portal",
@@ -97,7 +97,7 @@
       "author_timestamp": "2026-06-03T07:19:52Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:13.071303+00:00"
+      "last_verified_at": "2026-11-05T08:27:34.859986+00:00"
     },
     "amalshajimichaelk/OS_Lab": {
       "name": "OS_Lab",
@@ -109,7 +109,7 @@
       "author_timestamp": "2026-05-29T03:00:42Z",
       "language": "C",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:13.493630+00:00"
+      "last_verified_at": "2026-11-05T08:27:35.309984+00:00"
     },
     "amalshajimichaelk/Portfolio": {
       "name": "Portfolio",
@@ -121,7 +121,7 @@
       "author_timestamp": "2026-11-03T19:29:05Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:14.697705+00:00"
+      "last_verified_at": "2026-11-05T08:27:36.369132+00:00"
     },
     "amalshajimichaelk/projects": {
       "name": "projects",
@@ -133,7 +133,7 @@
       "author_timestamp": "2026-05-25T14:36:17Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:15.078767+00:00"
+      "last_verified_at": "2026-11-05T08:27:36.711740+00:00"
     },
     "amalshajimichaelk/Quantum_Shield": {
       "name": "Quantum_Shield",
@@ -145,7 +145,7 @@
       "author_timestamp": "2026-11-03T11:16:26Z",
       "language": "Python",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:15.913476+00:00"
+      "last_verified_at": "2026-11-05T08:27:37.373649+00:00"
     },
     "amalshajimichaelk/S1_Python-1-": {
       "name": "S1_Python-1-",
@@ -157,7 +157,7 @@
       "author_timestamp": "2024-12-19T04:26:10Z",
       "language": "Python",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:16.321671+00:00"
+      "last_verified_at": "2026-11-05T08:27:37.845699+00:00"
     },
     "amalshajimichaelk/S2_C_programmimg": {
       "name": "S2_C_programmimg",
@@ -169,7 +169,7 @@
       "author_timestamp": "2025-04-26T16:28:22Z",
       "language": "C",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:16.753660+00:00"
+      "last_verified_at": "2026-11-05T08:27:38.444881+00:00"
     },
     "amalshajimichaelk/S3_Java_": {
       "name": "S3_Java_",
@@ -181,7 +181,7 @@
       "author_timestamp": "2025-11-20T08:47:51Z",
       "language": "Java",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:17.128946+00:00"
+      "last_verified_at": "2026-11-05T08:27:38.805274+00:00"
     },
     "amalshajimichaelk/S5_CN": {
       "name": "S5_CN",
@@ -193,7 +193,7 @@
       "author_timestamp": "2026-10-15T07:18:59Z",
       "language": "Java",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:17.510470+00:00"
+      "last_verified_at": "2026-11-05T08:27:39.231791+00:00"
     },
     "amalshajimichaelk/S5_ML_lab": {
       "name": "S5_ML_lab",
@@ -205,7 +205,7 @@
       "author_timestamp": "2026-10-01T07:13:44Z",
       "language": "Jupyter Notebook",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:17.904499+00:00"
+      "last_verified_at": "2026-11-05T08:27:39.563350+00:00"
     },
     "amalshajimichaelk/skills-communicate-using-markdown": {
       "name": "skills-communicate-using-markdown",
@@ -217,7 +217,7 @@
       "author_timestamp": "2025-04-08T15:33:50Z",
       "language": null,
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:18.413026+00:00"
+      "last_verified_at": "2026-11-05T08:27:39.981879+00:00"
     },
     "amalshajimichaelk/Taskpulse": {
       "name": "Taskpulse",
@@ -229,7 +229,7 @@
       "author_timestamp": "2026-05-27T07:25:45Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:19.248516+00:00"
+      "last_verified_at": "2026-11-05T08:27:40.716359+00:00"
     },
     "amalshajimichaelk/Verify_AI": {
       "name": "Verify_AI",
@@ -241,7 +241,7 @@
       "author_timestamp": "2026-09-06T11:50:40Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:19.685256+00:00"
+      "last_verified_at": "2026-11-05T08:27:41.109992+00:00"
     },
     "amalshajimichaelk/Github-Enablment-Task": {
       "name": "Github-Enablment-Task",
@@ -253,7 +253,7 @@
       "author_timestamp": "2025-05-04T13:12:27Z",
       "language": null,
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:10.592935+00:00"
+      "last_verified_at": "2026-11-05T08:27:32.481645+00:00"
     },
     "amalshajimichaelk/learn-github-pages": {
       "name": "learn-github-pages",
@@ -265,7 +265,7 @@
       "author_timestamp": "2025-04-08T15:50:38Z",
       "language": "SCSS",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:12.171971+00:00"
+      "last_verified_at": "2026-11-05T08:27:34.070531+00:00"
     },
     "amalshajimichaelk/Quantum_Hack": {
       "name": "Quantum_Hack",
@@ -277,7 +277,7 @@
       "author_timestamp": "2026-11-01T06:19:25Z",
       "language": "Python",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:15.466393+00:00"
+      "last_verified_at": "2026-11-05T08:27:36.994552+00:00"
     },
     "amalshajimichaelk/Subscription_Management_System_OODO": {
       "name": "Subscription_Management_System_OODO",
@@ -289,7 +289,7 @@
       "author_timestamp": "2026-11-03T12:58:40Z",
       "language": "TypeScript",
       "visibility": "public",
-      "last_verified_at": "2026-11-05T01:30:18.770979+00:00"
+      "last_verified_at": "2026-11-05T08:27:40.316226+00:00"
     }
   }
 }
